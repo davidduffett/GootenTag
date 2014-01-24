@@ -14,7 +14,7 @@
 [assembly: AssemblyDescriptionAttribute("ASP.NET Helpers for Google tracking (Google Analytics, Google Tag Manager, Google" +
     " Adwords)")]
 [assembly: AssemblyCopyrightAttribute("Copyright David Duffett 2014")]
-[assembly: AssemblyVersionAttribute("0.1.0")]
-[assembly: AssemblyFileVersionAttribute("0.1.0")]
-[assembly: AssemblyInformationalVersionAttribute("0.1.0")]
+[assembly: AssemblyVersionAttribute("1.0.0")]
+[assembly: AssemblyFileVersionAttribute("1.0.0")]
+[assembly: AssemblyInformationalVersionAttribute("1.0.0")]
 

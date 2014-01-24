@@ -1,0 +1,16 @@
+﻿@using GootenTag
+
+@{
+    ViewBag.Title = "Google Tag Manager Example | GootenTag";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@GoogleTagManager.Render()
+
+<h1>GootenTag: Google Tag Manager</h1>
+<p>ASP.NET MVC Helpers for Google Tag Manager</p>
+
+<h2>Google Tag Manager script output:</h2>
+<pre>
+@GoogleTagManager.Render().ToString()
+</pre>

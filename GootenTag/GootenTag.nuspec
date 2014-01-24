@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>GootenTag</id>
+	  <version>0.0.0</version>
+    <authors>David Duffett</authors>
+    <owners>David Duffett</owners>
+    <licenseUrl>https://github.com/davidduffett/GootenTag/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/davidduffett/GootenTag</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ASP.NET Helpers for Google tracking (Google Analytics, Google Tag Manager, Google Adwords)</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>google analytics tag manager adwords mvc asp.net</tags>
+	  <dependencies>
+      <dependency id="Newtonsoft.Json" version="5.0.8" />
+	  </dependencies>
+  </metadata>
+  <files>
+	<file src="artifacts\publish\GootenTag.dll" target="lib\net40" />
+  </files>
+</package>

@@ -5,6 +5,7 @@
 	Usage:	<property name="msbuild.solution.file" value="C:\MyApplication\MyApplication.sln" />
 			<property name="msbuild.output.dir" value="C:\MyApplication\output\" />
 			<property name="msbuild.publish.dir" value="C:\MyApplication\publish\" />
+			<property name="msbuild.weboutput.disable" value="true" />
 			<include buildfile="msbuild.build" />
 			<call target="MSBuild" />
 -->
@@ -14,6 +15,7 @@
 	<property name="msbuild.configuration" value="Release" overwrite="false" />
 	<property name="msbuild.output.dir" value="" overwrite="false" />
 	<property name="msbuild.publish.dir" value="" overwrite="false" />
+	<property name="msbuild.weboutput.disable" value="false" overwrite="false" />
 	
 	<property name="msbuild.exe" value="${framework::get-framework-directory(framework::get-target-framework())}\MSBuild.exe"/>
 
@@ -33,7 +35,7 @@
 			<arg value="/t:Clean;Build" />
 			<arg value="/p:Configuration=${msbuild.configuration}"/>
 			<arg value="/p:OutDir=${msbuild.output.dir}"/>
-			<arg value="/p:WebProjectOutputDir=${msbuild.publish.dir}"/>
+			<arg value="/p:WebProjectOutputDir=${msbuild.publish.dir}" unless="${msbuild.weboutput.disable}"/>
 		</exec>
 		<if test="${not directory::exists(msbuild.publish.dir)}">
 			<echo message="Copying build output of non-web project to publish folder" />
